@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen Semantik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+        li{
+            color: pink;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            line-height: 2;
+        }
+        p{
+            color: yellow;
+        }
+        header{
+            background-image: url(img/ussr\ flag.png);
+            opacity: 0.65;
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <nav class = "topnav">
+            <img src="img/ussr logo.png" alt="USSR Logo" id="logo-pict">
+            <p>USSR Tribute</p>
+            <a href="#topnav">Home</a>
+            <a class="active"href="#about">Portofolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- lagu -->
+    <div class="lagu">
+        <p>Daftar <span class="highlight">Lagu</span></p>
+        <ul>
+            <li>National Anthem of USSR</li>
+            <li>Erika</li>
+        </ul>
+        <audio controls autoplay loop 
+            src="audio/soviet-anthem.mp3">
+            Browser anda tidak mendukung audio.
+    </audio>
+    </div>
+    <!-- video -->
+    <div class="video">
+        <video controls 
+            width="400" 
+            height="240" 
+            src="video/videocontoh.mp4">
+            Browser anda tidak mendukung video.
+    </video>
+    </div>
+
+    <div id="contactme">
+        <h3>Kontak Saya</h3>
+        <form action="">
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="nama">Nama Lengkap</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama" name="nama" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim">NIM</label>
+                    </td>
+                    <td>
+                        <input type="date" min="0" max="100" id="nim" name="nim" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jeniskelamin">Jenis Kelamin</label>
+                    </td>
+                    <td>
+                        <input type="radio" value="Laki-laki" name="jeniskelamin" >Pria  <br>
+                        <input type="radio" value="Perempuan" name="jeniskelamin" >Wanita
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hobi">Hobi</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="Masak" name="hobi">Masak <br>
+                        <input type="checkbox" value="Game" name="hobi">Game <br>
+                        <input type="checkbox" value="Olahraga" name="hobi">Olahraga
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prodi">Prodi</label>
+                    </td>
+                    <td>
+                        <select name="prodi" id="prodi">
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                            <option value="Teknik Mesin">Teknik Mesin</option>
+                        </select>
+                    </td>
+                </tr>   
+            </table>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy 2025 Raihan Putra Akbar, All Rights Reserved.</p></p>
+        <p>
+            <a href="/privacy">Kebijakan Privasi</a>
+            <a href="/terms">Syarat dan Ketentuan"></a>
+        </p>
+    </footer>
+</body>
+</html>
