@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer"
+    ;
+}
+
+.page-header {
+    grid-area: header;
+    background-color: coral;
+}
+
+.main-article {
+    grid-area: content;
+    background-color: aqua;
+    padding: 200px;
+}
+
+.page-footer {
+    grid-area: footer;
+    background-color: greenyellow;
+}
+
+.main-article > p > img {
+    float: left;
+}
+
+
