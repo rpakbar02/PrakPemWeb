@@ -1,0 +1,46 @@
+#mission-control {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.asset-card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    border: 2px solid #555;
+}
+
+.asset-status{
+    margin-top: auto;
+}
+
+.asset-card::after{
+    content: "Buka Arsip Proyek";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFE152;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.asset-card:hover::after{
+    opacity: 1;
+}
+
+#priority-alpha{
+    border-color: #00FFFF;
+}
+
+#mission-control .asset-card:hover{
+    border-color: #FF00FF;
+}
